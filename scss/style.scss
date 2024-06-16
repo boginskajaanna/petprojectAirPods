@@ -618,7 +618,10 @@ body {
 
   &__inner {
     background: rgba(255, 255, 255, 0.8);
-    margin: 15% auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    // margin: 15% auto;
     padding: 40px;
     border: 1px solid #888;
     width: 80%;
@@ -636,6 +639,7 @@ body {
     margin-bottom: 30px;
     @media (max-width: 480px) {
       font-size: 20px;
+      margin-bottom: 20px;
     }
   }
 
@@ -657,18 +661,20 @@ body {
 
   &__form-btn {
     display: block;
-    margin: 0 auto 30px;
+    margin: 40px auto 0;
     padding: 15px 58px;
     border-radius: 30px;
     background-color: #000;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 40px;
     transition: all ease 0.3s;
     &:hover {
       background-color: #fff;
       color: #000;
+    }
+     @media (max-width: 480px) {
+      margin-top: 20px;
     }
   }
   &__input-container {
@@ -686,6 +692,7 @@ body {
 
   &__message {
     text-align: center;
+    margin-top: 20px;
   }
 }
 
