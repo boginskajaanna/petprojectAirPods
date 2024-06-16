@@ -1,0 +1,46 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.content-item {
+  display: none;
+
+  &.content-item--active {
+    display: inline-block;
+  }
+}
+
+.btn-buy {
+  padding: 15px 58px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: #000;
+    color: #ffffff;
+  }
+}

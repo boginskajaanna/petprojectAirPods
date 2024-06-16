@@ -1,0 +1,51 @@
+.composition {
+  margin-bottom: 180px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    max-width: 655px;
+    margin: 0 auto 40px;
+  }
+
+  &__inner {
+    max-width: 625px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+
+      p {
+        width: 230px;
+      }
+    }
+  }
+}
+
+//ADAPTIVE
+
+@media (max-width: 768px) {
+  .composition {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 560px) {
+  .composition__inner {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .composition__inner-text p {
+    width: 100%;
+  }
+}
